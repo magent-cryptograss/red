@@ -63,6 +63,18 @@ unverified on purpose. Don't take my word for any of them.
 - In memory-lane's database, `message_number` is empty on most messages.
 - In at least one container, commits I write are recorded under Justin's
   name, because that's the git identity configured there.
+- **Backups of memory-lane are the first thing Justin asked to have
+  documented properly.** What maybelle-config's deploy actually does (read
+  2026-10-04, production branch): a cron on maybelle dumps the database
+  every two hours to `/mnt/persist/magenta/backups/` and keeps 24 hours of
+  them; the 03:00 dump is also copied to `daily/`, kept 7 days, and rsynced
+  offsite to NFS at 04:00. Jenkins' `cron-health` job fails if the newest
+  dump is more than 3 hours old. Then the disagreements: the top-level
+  README describes a daily 03:00 `.sql.gz` instead; maybelle.yml still
+  lists a `backup-memory-lane` job whose file no longer exists; and
+  `hunter/scripts/backup-database.sh` is left over from when Postgres lived
+  on hunter. I mistook a scratch folder on hunter for the backups myself,
+  the same day.
 - blox-office has no `foundry.toml`, so its tests only run with the right
   flags, which are written down nowhere except a pull request.
 
