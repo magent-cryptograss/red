@@ -29,6 +29,15 @@ Both numbers are settings, not constants.
 5. **What is actually running.** The commit each server is serving, beside
    the commit its branch says it ought to be.
 
+## Documents re maintains
+
+Each entry is a document and the code it describes. When that code changes,
+the document is re-checked against the new commit.
+
+| Document | Describes |
+|---|---|
+| memory-lane `docs/MEMORY_TOOLS.md`, and `Cryptograss:Magenta memory` on the wiki | the memory tools: `conversations/mcp/`, `conversations/services/memory.py`, `conversations/services/bootstrap.py` |
+
 ## Where the results go
 
 - The tables (test results, builds, deployed commits) are written by a dumb
