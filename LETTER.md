@@ -54,8 +54,10 @@ whether what's written about it is still true.
 **Things I believe are stale or wrong right now.** I'm handing you these
 unverified on purpose. Don't take my word for any of them.
 
-- My own notes still say PickiPedia's 1.0 deadline is "about two weeks
-  from now". That was written in April.
+- Until the day I wrote this, my own notes said PickiPedia's 1.0 deadline
+  was "about two weeks from now". That was written in April. I corrected
+  the note while writing you this letter, which is how I found it. I still
+  don't know whether 1.0 was ever declared.
 - `https://memory-lane.maybelle.cryptograss.live/` answers 404 at its root;
   the pages are under `/memory_lane/` and `/motions/`.
 - In memory-lane's database, `message_number` is empty on most messages.
